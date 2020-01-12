@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_learn_verb"
+    app:startDestination="@id/learnVerbsHomeFragment">
+
+    <fragment
+        android:id="@+id/learnVerbsHomeFragment"
+        android:name="com.raminarman.learningapp.LearnVerbsHomeFragment"
+        android:label="fragment_learn_verbs_home"
+        tools:layout="@layout/fragment_learn_verbs_home" >
+        <action
+            android:id="@+id/action_learnVerbsHomeFragment_to_verbDetailFragment"
+            app:destination="@id/verbDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/verbDetailFragment"
+        android:name="com.raminarman.learningapp.VerbDetailFragment"
+        android:label="fragment_verb_detail"
+        tools:layout="@layout/fragment_verb_detail" />
+</navigation>
